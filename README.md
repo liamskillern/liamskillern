@@ -9,6 +9,8 @@ Most of what I learn, I learn by building it in my homelab first.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/liam-skillern/)
 [![GitHub](https://img.shields.io/badge/GitHub-1B1B1B?style=for-the-badge&logo=github&logoColor=D4AF37)](https://github.com/liamskillern)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/liamskill/)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/liamskillern_)
 ![Based in Colorado](https://img.shields.io/badge/Based_in-Fort_Collins,_CO-3B5D3A?style=for-the-badge)
 
 </div>
