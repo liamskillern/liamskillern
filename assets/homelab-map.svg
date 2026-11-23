@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-label="Map of my homelab. My desktop, laptop and Pixel 9 connect over Tailscale to my Ubuntu server, which runs Nextcloud, Immich, Paperless, AdGuard Home, Uptime Kuma and Wazuh SIEM. A separate VMware AD lab has a Kali attacker and Nessus scanner targeting a Windows Server 2025 domain controller. Wazuh agents on my machines and the DC report to the SIEM.">
+<!-- Map of my Middle-earth: homelab diagram for my profile README. Hand-written SVG. -->
+<defs>
+  <radialGradient id="bg" cx="50%" cy="45%" r="75%"><stop offset="0%" stop-color="#1b1824"/><stop offset="100%" stop-color="#07070c"/></radialGradient>
+  <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d4af37"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#e0553f"/></marker>
+  <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7fb3d5"/></marker>
+</defs>
+<style>
+  text { font-family: Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", serif; }
+  .title { font-size: 26px; font-weight: bold; letter-spacing: 3px; fill: #d4af37; }
+  .sub { font-size: 13.5px; font-style: italic; fill: #b8a98a; }
+  .realm { font-size: 17px; font-weight: bold; fill: #d4af37; letter-spacing: 1px; }
+  .realm2 { font-size: 12px; font-style: italic; fill: #8f8270; }
+  .chip rect { fill: #1c1926; stroke: #d4af37; stroke-opacity: .45; stroke-width: 1.2; }
+  .chip text { font-size: 14.5px; fill: #f3e6c8; }
+  .flow { fill: none; stroke: #d4af37; stroke-width: 2; stroke-dasharray: 6 6; animation: flow 1.2s linear infinite; }
+  .atk { fill: none; stroke: #e0553f; stroke-width: 2; stroke-dasharray: 6 6; animation: flow .8s linear infinite; }
+  .agent { fill: none; stroke: #7fb3d5; stroke-width: 1.6; stroke-dasharray: 2 5; animation: flow 1.6s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -12; } }
+  .lbl { font-size: 12px; font-style: italic; }
+  .eye { animation: blink 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes blink { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
+</style>
+<rect width="1000" height="560" rx="16" fill="url(#bg)"/>
+<rect x="6" y="6" width="988" height="548" rx="12" fill="none" stroke="#d4af37" stroke-opacity="0.35"/>
+<text x="500" y="46" text-anchor="middle" class="title">MAP OF MY MIDDLE-EARTH</text>
+<text x="500" y="70" text-anchor="middle" class="sub">Everything is reached over Tailscale. Nothing is exposed to the open internet.</text>
+
+<!-- The Shire: my devices -->
+<rect x="30" y="100" width="220" height="250" rx="12" fill="#2d4a2b" fill-opacity=".18" stroke="#6f9a5a" stroke-opacity=".6"/>
+<text x="140" y="128" text-anchor="middle" class="realm">🏡 The Shire</text>
+<text x="140" y="146" text-anchor="middle" class="realm2">my devices</text>
+<g class="chip"><rect x="50" y="162" width="180" height="42" rx="8"/><text x="140" y="189" text-anchor="middle">🖥️ Desktop (self-built)</text></g>
+<g class="chip"><rect x="50" y="218" width="180" height="42" rx="8"/><text x="140" y="245" text-anchor="middle">💻 Laptop</text></g>
+<g class="chip"><rect x="50" y="274" width="180" height="42" rx="8"/><text x="140" y="301" text-anchor="middle">📱 Pixel 9</text></g>
+
+<!-- Tailscale -->
+<path d="M 288 225 L 306 196 L 362 196 L 380 225 L 362 254 L 306 254 Z" fill="#1c1926" stroke="#d4af37" stroke-width="1.5"/>
+<text x="334" y="221" text-anchor="middle" style="font-size:20px">🧝</text>
+<text x="334" y="243" text-anchor="middle" style="font-size:12.5px;fill:#f3e6c8;font-weight:bold">Tailscale</text>
+<text x="334" y="276" text-anchor="middle" class="lbl" style="fill:#b8a98a">private tunnel</text>
+<path class="flow" d="M 252 225 L 284 225" marker-end="url(#ag)"/>
+<path class="flow" d="M 382 225 L 422 225" marker-end="url(#ag)"/>
+
+<!-- Minas Tirith: Ubuntu server -->
+<rect x="425" y="100" width="545" height="210" rx="12" fill="#c9c3b0" fill-opacity=".06" stroke="#d4af37" stroke-opacity=".6"/>
+<text x="697" y="128" text-anchor="middle" class="realm">🏰 Minas Tirith</text>
+<text x="697" y="146" text-anchor="middle" class="realm2">my Ubuntu server</text>
+<g class="chip"><rect x="445" y="162" width="160" height="42" rx="8"/><text x="525" y="189" text-anchor="middle">☁️ Nextcloud</text></g>
+<g class="chip"><rect x="617" y="162" width="160" height="42" rx="8"/><text x="697" y="189" text-anchor="middle">🖼️ Immich</text></g>
+<g class="chip"><rect x="789" y="162" width="160" height="42" rx="8"/><text x="869" y="189" text-anchor="middle">📄 Paperless</text></g>
+<g class="chip"><rect x="445" y="218" width="160" height="42" rx="8"/><text x="525" y="245" text-anchor="middle">🚫 AdGuard Home</text></g>
+<g class="chip"><rect x="617" y="218" width="160" height="42" rx="8"/><text x="697" y="245" text-anchor="middle">📈 Uptime Kuma</text></g>
+<g class="chip"><rect x="789" y="218" width="160" height="42" rx="8" style="stroke:#7fb3d5;stroke-opacity:.9"/><text x="869" y="245" text-anchor="middle"><tspan class="eye">👁️</tspan> Wazuh SIEM</text></g>
+<text x="650" y="290" text-anchor="middle" class="lbl" style="fill:#8f8270">the white city: files, photos, documents, DNS filtering, uptime, detection</text>
+
+<!-- Mordor: AD attack lab -->
+<rect x="425" y="340" width="545" height="180" rx="12" fill="#5a1d12" fill-opacity=".22" stroke="#e0553f" stroke-opacity=".55"/>
+<text x="697" y="368" text-anchor="middle" class="realm" style="fill:#e8836f">🌋 Mordor</text>
+<text x="697" y="386" text-anchor="middle" class="realm2">AD attack lab in VMware</text>
+<g class="chip"><rect x="445" y="404" width="150" height="42" rx="8" style="stroke:#e0553f"/><text x="520" y="431" text-anchor="middle">🐉 Kali</text></g>
+<g class="chip"><rect x="445" y="460" width="150" height="42" rx="8" style="stroke:#e0553f"/><text x="520" y="487" text-anchor="middle">🔎 Nessus</text></g>
+<g class="chip"><rect x="720" y="430" width="230" height="46" rx="8"/><text x="835" y="459" text-anchor="middle">🪟 Windows Server 2025 DC</text></g>
+<path class="atk" d="M 597 425 C 650 425, 670 446, 716 448" marker-end="url(#ar)"/>
+<path class="atk" d="M 597 481 C 650 481, 670 460, 716 458" marker-end="url(#ar)"/>
+<text x="655" y="420" text-anchor="middle" class="lbl" style="fill:#e8836f">attacks</text>
+<text x="655" y="500" text-anchor="middle" class="lbl" style="fill:#e8836f">scans</text>
+
+<!-- Wazuh agents report to the SIEM -->
+<path class="agent" d="M 252 325 L 880 325 L 880 266" marker-end="url(#ab)"/>
+<path class="agent" d="M 930 428 L 930 266" marker-end="url(#ab)"/>
+<text x="262" y="318" class="lbl" style="fill:#7fb3d5">Wazuh agents on my desktop and laptop</text>
+<text x="922" y="414" class="lbl" style="fill:#7fb3d5" text-anchor="end">agent on the DC</text>
+<text x="500" y="540" text-anchor="middle" class="sub">One SIEM to watch them all.</text>
+</svg>

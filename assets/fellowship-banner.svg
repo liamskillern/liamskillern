@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" width="1000" height="120" role="img" aria-label="The Fellowship of Skills">
+<!-- Animated section banner: a light sweeps across gold lettering and the ornaments draw themselves in. -->
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#15121e"/><stop offset="100%" stop-color="#09080e"/>
+  </linearGradient>
+  <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="-400" y1="0" x2="0" y2="0">
+    <stop offset="0%" stop-color="#a8822a"/>
+    <stop offset="40%" stop-color="#d4af37"/>
+    <stop offset="50%" stop-color="#fff4c4"/>
+    <stop offset="60%" stop-color="#d4af37"/>
+    <stop offset="100%" stop-color="#a8822a"/>
+    <animate attributeName="x1" values="-400;1000;1000" keyTimes="0;0.6;1" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="0;1400;1400" keyTimes="0;0.6;1" dur="5s" repeatCount="indefinite"/>
+  </linearGradient>
+  <filter id="glow" x="-10%" y="-50%" width="120%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  text { font-family: Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", serif; }
+  .t { font-size: 32px; font-weight: bold; letter-spacing: 5px; }
+  .s { font-size: 14px; font-style: italic; fill: #b8a98a; letter-spacing: 1px; }
+  .line { stroke: #d4af37; stroke-width: 1.5; fill: none; stroke-dasharray: 320; stroke-dashoffset: 320; animation: draw 5s ease-out infinite; }
+  @keyframes draw { 0% { stroke-dashoffset: 320; } 30% { stroke-dashoffset: 0; } 85% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0.2; } }
+  .gem { fill: #d4af37; animation: gem 2.5s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+  @keyframes gem { from { opacity: .45; transform: scale(.85) rotate(45deg); } to { opacity: 1; transform: scale(1.15) rotate(45deg); } }
+  .halo { animation: halo 5s ease-in-out infinite; }
+  @keyframes halo { 0%,100% { opacity: .25; } 50% { opacity: .6; } }
+</style>
+<rect width="1000" height="120" rx="12" fill="url(#bg)"/>
+<rect x="5" y="5" width="990" height="110" rx="9" fill="none" stroke="#d4af37" stroke-opacity="0.3"/>
+<text class="t halo" x="500" y="66" text-anchor="middle" fill="#ff9a3c" filter="url(#glow)">THE FELLOWSHIP OF SKILLS</text>
+<text class="t" x="500" y="66" text-anchor="middle" fill="url(#gold)">THE FELLOWSHIP OF SKILLS</text>
+<text class="s" x="500" y="96" text-anchor="middle">Every quest needs a company. These are mine.</text>
+<!-- ornaments: lines draw out from the center gems toward the edges -->
+<path class="line" d="M 150 58 L 30 58"/><path class="line" d="M 850 58 L 970 58"/>
+<path class="line" d="M 150 66 L 60 66" style="animation-delay:.3s"/><path class="line" d="M 850 66 L 940 66" style="animation-delay:.3s"/>
+<rect class="gem" x="155" y="56" width="10" height="10"/>
+<rect class="gem" x="835" y="56" width="10" height="10" style="animation-delay:1.2s"/>
+</svg>
