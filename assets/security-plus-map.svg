@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" width="1000" height="460" role="img" aria-label="The Road to Security+: a Middle-earth style map of my progress through the five Security+ exam domains">
+<!--
+  HOW TO UPDATE MY PROGRESS
+  1. Find the waypoint you just finished below (search for class="stop todo" with its name)
+     and change "todo" to "done".
+  2. Move the "You are here" marker: change the translate(x, y) on the line marked YOU-ARE-HERE
+     to that waypoint's x and y.
+-->
+<defs>
+  <radialGradient id="parch" cx="50%" cy="45%" r="75%">
+    <stop offset="0%" stop-color="#f6ecd2"/>
+    <stop offset="70%" stop-color="#ead8ad"/>
+    <stop offset="100%" stop-color="#c9a96b"/>
+  </radialGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  text { font-family: Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", serif; fill: #3b2a14; }
+  .title { font-size: 30px; font-weight: bold; letter-spacing: 3px; }
+  .sub { font-size: 14px; font-style: italic; fill: #5c4424; }
+  .place { font-size: 16px; font-weight: bold; }
+  .dom { font-size: 12.5px; fill: #4a3518; }
+  .stop circle.ring { stroke: #6b4a1e; stroke-width: 3; }
+  .todo circle.ring { fill: #f6ecd2; }
+  .done circle.ring { fill: #b8860b; }
+  .todo .check { display: none; }
+  .road { fill: none; stroke: #7a2e1e; stroke-width: 3.5; stroke-dasharray: 10 8; stroke-linecap: round; }
+</style>
+<rect x="0" y="0" width="1000" height="460" rx="14" fill="url(#parch)"/>
+<rect x="10" y="10" width="980" height="440" rx="10" fill="none" stroke="#6b4a1e" stroke-width="2.5"/>
+<rect x="17" y="17" width="966" height="426" rx="8" fill="none" stroke="#6b4a1e" stroke-width="1"/>
+<text x="500" y="56" text-anchor="middle" class="title">THE ROAD TO SECURITY+</text>
+<text x="500" y="80" text-anchor="middle" class="sub">CompTIA Security+ (SY0-701): five domains, one exam</text>
+
+<path d="M 30 250 l -6 0 l 6 -16 l 6 16 z" fill="#4d6b3c" opacity="0.6"/><path d="M 44 250 l -6 0 l 6 -16 l 6 16 z" fill="#4d6b3c" opacity="0.6"/><path d="M 58 250 l -6 0 l 6 -16 l 6 16 z" fill="#4d6b3c" opacity="0.6"/><path d="M 72 250 l -6 0 l 6 -16 l 6 16 z" fill="#4d6b3c" opacity="0.6"/>
+<path d="M 284 262 L 300 236 L 316 262 Z" fill="#6e5a44" opacity="0.55"/><path d="M 300 236 L 305 246 L 297 244 Z" fill="#f4e9cf" opacity="0.8"/><path d="M 306 262 L 322 226 L 338 262 Z" fill="#6e5a44" opacity="0.55"/><path d="M 322 226 L 327 236 L 319 234 Z" fill="#f4e9cf" opacity="0.8"/><path d="M 328 262 L 344 236 L 360 262 Z" fill="#6e5a44" opacity="0.55"/><path d="M 344 236 L 349 246 L 341 244 Z" fill="#f4e9cf" opacity="0.8"/><path d="M 350 262 L 366 226 L 382 262 Z" fill="#6e5a44" opacity="0.55"/><path d="M 366 226 L 371 236 L 363 234 Z" fill="#f4e9cf" opacity="0.8"/><path d="M 372 262 L 388 236 L 404 262 Z" fill="#6e5a44" opacity="0.55"/><path d="M 388 236 L 393 246 L 385 244 Z" fill="#f4e9cf" opacity="0.8"/>
+<path d="M 385 125 l -6 0 l 6 -16 l 6 16 z" fill="#4d6b3c" opacity="0.6"/><path d="M 399 125 l -6 0 l 6 -16 l 6 16 z" fill="#4d6b3c" opacity="0.6"/><path d="M 413 125 l -6 0 l 6 -16 l 6 16 z" fill="#4d6b3c" opacity="0.6"/>
+<path d="M 822 262 L 838 236 L 854 262 Z" fill="#5a2d1e" opacity="0.55"/><path d="M 838 236 L 843 246 L 835 244 Z" fill="#f4e9cf" opacity="0.8"/><path d="M 844 262 L 860 226 L 876 262 Z" fill="#5a2d1e" opacity="0.55"/><path d="M 860 226 L 865 236 L 857 234 Z" fill="#f4e9cf" opacity="0.8"/>
+<path d="M 925 282 L 950 240 L 975 282 Z" fill="#5a2d1e" opacity="0.6"/><circle cx="950" cy="238" r="5" fill="#d2452c" opacity="0.8" filter="url(#glow)"/>
+<path d="M 560 95 C 600 160, 560 220, 620 250 S 700 330, 690 430" fill="none" stroke="#6f8fa6" stroke-width="3" opacity="0.45"/>
+<g transform="translate(905,110)" opacity="0.75">
+<circle r="30" fill="none" stroke="#6b4a1e" stroke-width="1.5"/>
+<path d="M 0 -28 L 6 0 L 0 28 L -6 0 Z" fill="#6b4a1e"/><path d="M -28 0 L 0 6 L 28 0 L 0 -6 Z" fill="#a0784a"/>
+<text y="-34" text-anchor="middle" style="font-size:12px;font-weight:bold">N</text></g>
+<path class="road" d="M 80 330 C 145 330, 150 175, 215 175 C 280 175, 290 305, 355 305 C 420 305, 430 165, 495 165 C 560 165, 570 305, 635 305 C 700 305, 710 170, 775 170 C 840 170, 850 300, 915 300"/>
+<g class="stop todo"><!-- The Shire : x=80 y=330 --><circle class="ring" cx="80" cy="330" r="11"/><path class="check" d="M 75 330 l 4 4 l 7 -8" fill="none" stroke="#f6ecd2" stroke-width="2.5"/><text x="80" y="364" text-anchor="middle" class="place">The Shire</text><text x="80" y="381" text-anchor="middle" class="dom">Start: November 2026</text></g>
+<g class="stop todo"><!-- Rivendell : x=215 y=175 --><circle class="ring" cx="215" cy="175" r="11"/><path class="check" d="M 210 175 l 4 4 l 7 -8" fill="none" stroke="#f6ecd2" stroke-width="2.5"/><text x="215" y="113" text-anchor="middle" class="place">Rivendell</text><text x="215" y="130" text-anchor="middle" class="dom">1. General Security</text><text x="215" y="145" text-anchor="middle" class="dom">Concepts</text></g>
+<g class="stop todo"><!-- Moria : x=355 y=305 --><circle class="ring" cx="355" cy="305" r="11"/><path class="check" d="M 350 305 l 4 4 l 7 -8" fill="none" stroke="#f6ecd2" stroke-width="2.5"/><text x="355" y="339" text-anchor="middle" class="place">Moria</text><text x="355" y="356" text-anchor="middle" class="dom">2. Threats, Vulnerabilities,</text><text x="355" y="371" text-anchor="middle" class="dom">and Mitigations</text></g>
+<g class="stop todo"><!-- Helm's Deep : x=495 y=165 --><circle class="ring" cx="495" cy="165" r="11"/><path class="check" d="M 490 165 l 4 4 l 7 -8" fill="none" stroke="#f6ecd2" stroke-width="2.5"/><text x="495" y="103" text-anchor="middle" class="place">Helm's Deep</text><text x="495" y="120" text-anchor="middle" class="dom">3. Security</text><text x="495" y="135" text-anchor="middle" class="dom">Architecture</text></g>
+<g class="stop todo"><!-- Minas Tirith : x=635 y=305 --><circle class="ring" cx="635" cy="305" r="11"/><path class="check" d="M 630 305 l 4 4 l 7 -8" fill="none" stroke="#f6ecd2" stroke-width="2.5"/><text x="635" y="339" text-anchor="middle" class="place">Minas Tirith</text><text x="635" y="356" text-anchor="middle" class="dom">4. Security</text><text x="635" y="371" text-anchor="middle" class="dom">Operations</text></g>
+<g class="stop todo"><!-- Edoras : x=775 y=170 --><circle class="ring" cx="775" cy="170" r="11"/><path class="check" d="M 770 170 l 4 4 l 7 -8" fill="none" stroke="#f6ecd2" stroke-width="2.5"/><text x="775" y="108" text-anchor="middle" class="place">Edoras</text><text x="775" y="125" text-anchor="middle" class="dom">5. Program Management</text><text x="775" y="140" text-anchor="middle" class="dom">and Oversight</text></g>
+<g class="stop todo"><!-- Mount Doom : x=915 y=300 --><circle class="ring" cx="915" cy="300" r="11"/><path class="check" d="M 910 300 l 4 4 l 7 -8" fill="none" stroke="#f6ecd2" stroke-width="2.5"/><text x="915" y="334" text-anchor="middle" class="place">Mount Doom</text><text x="915" y="351" text-anchor="middle" class="dom">The exam</text><text x="915" y="366" text-anchor="middle" class="dom">Target: summer 2027</text></g>
+<g transform="translate(80, 330)"><!-- YOU-ARE-HERE: change these numbers to move the marker -->
+<circle r="20" fill="none" stroke="#d4af37" stroke-width="3" filter="url(#glow)"/>
+<line x1="0" y1="-11" x2="0" y2="-58" stroke="#3b2a14" stroke-width="2"/>
+<path d="M 0 -58 L 112 -58 L 102 -48 L 112 -38 L 0 -38 Z" fill="#7a2e1e"/>
+<text x="51" y="-43.5" text-anchor="middle" style="font-size:12px;font-weight:bold;fill:#f6ecd2">YOU ARE HERE</text>
+</g>
+<text x="500" y="436" text-anchor="middle" class="sub">The road goes ever on. Domains done: 0 of 5</text>
+</svg>

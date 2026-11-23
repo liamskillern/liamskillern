@@ -107,15 +107,22 @@ I'm learning to use Claude Code well, and I'm treating it like a security proble
 
 ## 📜 The Road to Security+
 
-Target: **summer 2027**, CompTIA Security+ (SY0-701). I check off each domain as I finish it.
+<div align="center">
+  <img src="assets/security-plus-map.svg" alt="Map of my Security+ journey: from the Shire through Rivendell, Moria, Helm's Deep, Minas Tirith and Edoras (the five exam domains) to Mount Doom (the exam). I'm at the Shire." width="100%" />
+</div>
 
-![Progress](https://img.shields.io/badge/Domains_done-0%20of%205-D4AF37?style=for-the-badge)
+Each stop is one of the five CompTIA Security+ (SY0-701) exam domains. Mount Doom is the exam itself, target **summer 2027**.
 
-- [ ] 1. General Security Concepts
-- [ ] 2. Threats, Vulnerabilities, and Mitigations
-- [ ] 3. Security Architecture
-- [ ] 4. Security Operations
-- [ ] 5. Security Program Management and Oversight
+<details>
+<summary>The domains as a checklist</summary>
+
+- [ ] 1. General Security Concepts (Rivendell)
+- [ ] 2. Threats, Vulnerabilities, and Mitigations (Moria)
+- [ ] 3. Security Architecture (Helm's Deep)
+- [ ] 4. Security Operations (Minas Tirith)
+- [ ] 5. Security Program Management and Oversight (Edoras)
+
+</details>
 
 ---
 
