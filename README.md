@@ -58,36 +58,9 @@ Most of what I learn, I learn by building it in my homelab first.
 
 Everything is reached over Tailscale, so nothing is exposed to the open internet. The full tour lives in my [homelab repo](https://github.com/liamskillern/homelab).
 
-```mermaid
-flowchart LR
-    subgraph Shire["🏡 My devices"]
-        PC["🖥️ Desktop (built it myself)"]
-        Laptop["💻 Laptop"]
-        Phone["📱 Pixel 9"]
-    end
-
-    TS{{"🧝 Tailscale<br/>private network"}}
-
-    subgraph MinasTirith["🏰 Ubuntu server"]
-        NC["☁️ Nextcloud"]
-        IM["🖼️ Immich"]
-        PL["📄 Paperless"]
-        AG["🚫 AdGuard Home"]
-        UK["📈 Uptime Kuma"]
-        WZ["👁️ Wazuh SIEM"]
-    end
-
-    subgraph Mordor["🌋 AD attack lab (VMware)"]
-        DC["🪟 Windows Server 2025 DC"]
-        KALI["🐉 Kali attacker"]
-        NS["🔎 Nessus"]
-    end
-
-    PC & Laptop & Phone --> TS --> MinasTirith
-    KALI -- attacks --> DC
-    NS -- scans --> DC
-    PC & Laptop & DC -. Wazuh agents .-> WZ
-```
+<div align="center">
+  <img src="assets/homelab-map.svg" alt="Map of my homelab. My desktop, laptop and Pixel 9 connect over Tailscale to my Ubuntu server running Nextcloud, Immich, Paperless, AdGuard Home, Uptime Kuma and Wazuh SIEM. A VMware AD lab has Kali and Nessus targeting a Windows Server 2025 domain controller. Wazuh agents report to the SIEM." width="100%" />
+</div>
 
 ---
 
