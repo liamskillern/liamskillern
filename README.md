@@ -17,9 +17,7 @@ Most of what I learn, I learn by building it in my homelab first.
 
 ---
 
-## ⚔️ The Fellowship of Skills
-
-> *Every quest needs a company. These are mine.*
+<h2 align="center"><img src="assets/fellowship-banner.svg" alt="⚔️ The Fellowship of Skills" width="100%" /></h2>
 
 **🛡️ Defense and detection**<br/>
 ![Wazuh](https://img.shields.io/badge/Wazuh_SIEM-3595F9?style=flat-square&logo=wazuh&logoColor=white)
