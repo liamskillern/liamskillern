@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Cinzel&weight=700&size=30&duration=3500&pause=1200&color=D4AF37&center=true&vCenter=true&width=700&height=60&lines=Hi%2C+I'm+Liam;Cybersecurity+student+%40+CSU+Pueblo;Keeper+of+a+homelab+in+Colorado;One+SIEM+to+watch+them+all" alt="Typing intro" />
+<img src="https://readme-typing-svg.demolab.com?font=Cinzel&weight=700&size=30&duration=3500&pause=1200&color=D4AF37&center=true&vCenter=true&width=700&height=60&lines=Hi%2C+I'm+Liam;Cybersecurity+student+%40+CSU+Pueblo;Keeper+of+a+Homelab;One+SIEM+to+watch+them+all" alt="Typing intro" />
 
 *Not all who tinker are lost.*
 
