@@ -103,31 +103,14 @@ Each stop is one of the five CompTIA Security+ (SY0-701) exam domains. Mount Doo
 
 ## 🧭 Seeking a Fellowship
 
-### 🎓 Education
+<div align="center">
+  <img src="assets/seeking-fellowship.svg" alt="Seeking a Fellowship. Education: B.S. Cybersecurity at CSU Pueblo (graduating Winter 2027), A.S. Cybersecurity from Arapahoe Community College, Security+ in progress. Looking for internships and entry-level roles in cybersecurity, IT and help desk, and AI. Experience: FOCO Cyber founder, homelab administrator, Wazuh SIEM and detection, Active Directory attack lab, AI automation with Claude Code." width="100%" />
 
-| Degree | School | Status |
-|---|---|---|
-| B.S. Cybersecurity | Colorado State University Pueblo | Graduating Winter 2027 |
-| A.S. Cybersecurity | Arapahoe Community College | ✅ Completed |
-| CompTIA Security+ | | Studying, target summer 2027 |
+<br/>
 
-### ⚒️ Experience
+[![Hire me: message me on LinkedIn](https://img.shields.io/badge/Hiring%3F_Message_me_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/liam-skillern/)
 
-- **FOCO Cyber** (founder): security help for small businesses in Fort Collins.
-- **Homelab administrator:** I run my own Ubuntu server with Nextcloud, Immich, Paperless, AdGuard Home and Uptime Kuma, all over Tailscale.
-- **SIEM and detection:** deployed Wazuh with agents across my machines and use it to catch attacks in my AD lab.
-- **Active Directory attack lab:** built a Windows Server 2025 domain, attacked it from Kali, and scanned it with Nessus.
-- **AI automation:** built Ultron, a Claude Code morning brief with a read-only tool allowlist to defend against prompt injection.
-
-### 🔭 What I'm looking for
-
-**Internships and entry-level roles** in:
-
-- 🛡️ **Cybersecurity:** SOC analyst, security operations
-- 🖥️ **IT and help desk:** desktop support, systems administration
-- 🔮 **AI:** AI operations, automation, and securing AI agents
-
-📍 Fort Collins, Colorado, open to remote. If you're hiring, [message me on LinkedIn](https://www.linkedin.com/in/liam-skillern/).
+</div>
 
 ---
 
