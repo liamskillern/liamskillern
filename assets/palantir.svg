@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400" role="img" aria-label="An animated palantir showing visions of Ultron, my Claude Code morning brief, next to a diagram of how it reads email and calendar through read-only tools and sends a brief to my phone">
+<!-- The Palantír: animated card for my profile README. Hand-written SVG; the animation is plain CSS. -->
+<defs>
+  <radialGradient id="sky" cx="25%" cy="50%" r="80%">
+    <stop offset="0%" stop-color="#1d1a2b"/>
+    <stop offset="100%" stop-color="#07070c"/>
+  </radialGradient>
+  <radialGradient id="orb" cx="42%" cy="38%" r="65%">
+    <stop offset="0%" stop-color="#ffd27a"/>
+    <stop offset="18%" stop-color="#e07a2a"/>
+    <stop offset="45%" stop-color="#6b1e12"/>
+    <stop offset="80%" stop-color="#160a14"/>
+    <stop offset="100%" stop-color="#05040a"/>
+  </radialGradient>
+  <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+    <stop offset="55%" stop-color="#ff8a2a" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#ff8a2a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="shine" cx="35%" cy="25%" r="35%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="ball"><circle cx="220" cy="175" r="120"/></clipPath>
+  <filter id="blur"><feGaussianBlur stdDeviation="4"/></filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0 0 L10 5 L0 10 Z" fill="#d4af37"/>
+  </marker>
+</defs>
+<style>
+  text { font-family: Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", serif; }
+  .title { font-size: 26px; font-weight: bold; letter-spacing: 3px; fill: #d4af37; }
+  .sub { font-size: 14px; font-style: italic; fill: #b8a98a; }
+  .vision { font-size: 15px; fill: #fff1d6; font-style: italic; opacity: 0; animation: vision 16s infinite; }
+  .v2 { animation-delay: 4s; } .v3 { animation-delay: 8s; } .v4 { animation-delay: 12s; }
+  @keyframes vision { 0% { opacity: 0; } 4% { opacity: 1; } 22% { opacity: 1; } 26% { opacity: 0; } 100% { opacity: 0; } }
+  .swirl { animation: spin 14s linear infinite; transform-origin: 220px 175px; }
+  .swirl2 { animation: spin 22s linear infinite reverse; transform-origin: 220px 175px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .pulse { animation: pulse 4s ease-in-out infinite; transform-origin: 220px 175px; }
+  @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+  .eye { animation: eye 16s infinite; animation-delay: 8s; opacity: 0; }
+  @keyframes eye { 0% { opacity: 0; } 6% { opacity: 0.9; } 20% { opacity: 0.9; } 26% { opacity: 0; } 100% { opacity: 0; } }
+  .box rect { fill: #14121c; stroke: #d4af37; stroke-width: 1.5; }
+  .box text { fill: #f3e6c8; font-size: 15px; font-weight: bold; }
+  .box .small { fill: #b8a98a; font-size: 12px; font-weight: normal; font-style: italic; }
+  .flow { stroke: #d4af37; stroke-width: 2; fill: none; stroke-dasharray: 6 6; animation: flow 1.2s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -12; } }
+  .blocked { stroke: #b3261e; stroke-width: 2; fill: none; stroke-dasharray: 4 5; }
+  .note { fill: #e9b8a8; font-size: 13px; font-style: italic; }
+</style>
+
+<rect width="1000" height="400" rx="16" fill="url(#sky)"/>
+<rect x="6" y="6" width="988" height="388" rx="12" fill="none" stroke="#d4af37" stroke-opacity="0.35"/>
+
+<!-- stars -->
+<g fill="#fff" opacity="0.5">
+  <circle cx="60" cy="40" r="1.2"/><circle cx="410" cy="30" r="1"/><circle cx="470" cy="360" r="1.3"/>
+  <circle cx="960" cy="60" r="1"/><circle cx="30" cy="330" r="1"/><circle cx="380" cy="120" r="0.9"/>
+  <circle cx="900" cy="370" r="1.1"/><circle cx="560" cy="25" r="1"/>
+</g>
+
+<!-- the stone -->
+<circle class="pulse" cx="220" cy="175" r="165" fill="url(#halo)"/>
+<circle cx="220" cy="175" r="120" fill="url(#orb)"/>
+<g clip-path="url(#ball)" opacity="0.6">
+  <g class="swirl">
+    <path d="M 220 175 C 260 120, 330 140, 320 200 C 310 250, 250 260, 230 230" stroke="#ffb35c" stroke-width="7" fill="none" filter="url(#blur)"/>
+    <path d="M 220 175 C 180 230, 110 210, 120 150 C 130 100, 190 90, 210 120" stroke="#ff7a2a" stroke-width="6" fill="none" filter="url(#blur)"/>
+  </g>
+  <g class="swirl2">
+    <path d="M 150 110 C 210 60, 300 90, 300 150" stroke="#ffd27a" stroke-width="3" fill="none" filter="url(#blur)"/>
+    <path d="M 290 250 C 230 290, 140 260, 140 200" stroke="#c2401f" stroke-width="4" fill="none" filter="url(#blur)"/>
+  </g>
+  <!-- a fiery eye, briefly, during the prompt-injection vision -->
+  <g class="eye">
+    <ellipse cx="220" cy="175" rx="58" ry="26" fill="#ff8a2a" filter="url(#blur)"/>
+    <ellipse cx="220" cy="175" rx="7" ry="24" fill="#120606"/>
+  </g>
+</g>
+<circle cx="220" cy="175" r="120" fill="url(#shine)"/>
+<circle cx="220" cy="175" r="120" fill="none" stroke="#3a2a1a" stroke-width="2"/>
+
+<!-- visions inside the stone -->
+<text class="vision v1" x="220" y="180" text-anchor="middle">reading the inbox...</text>
+<text class="vision v2" x="220" y="180" text-anchor="middle">consulting the calendar...</text>
+<text class="vision v3" x="220" y="236" text-anchor="middle">an email gives orders. ignored.</text>
+<text class="vision v4" x="220" y="180" text-anchor="middle">the brief is written.</text>
+
+<!-- stand -->
+<path d="M 160 290 Q 220 310 280 290 L 300 340 Q 220 362 140 340 Z" fill="#2a2018" stroke="#5a4630" stroke-width="2"/>
+<path d="M 150 336 Q 220 356 290 336" stroke="#d4af37" stroke-opacity="0.5" fill="none"/>
+
+<!-- heading -->
+<text x="700" y="52" text-anchor="middle" class="title">THE PALANTÍR</text>
+<text x="700" y="76" text-anchor="middle" class="sub">Ultron, my Claude Code morning brief</text>
+
+<!-- flow -->
+<g class="box"><rect x="470" y="100" width="150" height="56" rx="8"/>
+  <text x="545" y="124" text-anchor="middle">📬 Email</text><text x="545" y="143" text-anchor="middle" class="small">+ calendar</text></g>
+<g class="box"><rect x="640" y="100" width="130" height="56" rx="8"/>
+  <text x="705" y="124" text-anchor="middle">🛡️ Read-only</text><text x="705" y="143" text-anchor="middle" class="small">tool allowlist</text></g>
+<g class="box"><rect x="790" y="100" width="170" height="56" rx="8"/>
+  <text x="875" y="124" text-anchor="middle">🔮 Claude Code</text><text x="875" y="143" text-anchor="middle" class="small">on a schedule</text></g>
+<g class="box"><rect x="790" y="210" width="170" height="56" rx="8"/>
+  <text x="875" y="234" text-anchor="middle">📜 Daily brief</text><text x="875" y="253" text-anchor="middle" class="small">written to my notes</text></g>
+<g class="box"><rect x="580" y="210" width="170" height="56" rx="8"/>
+  <text x="665" y="234" text-anchor="middle">📱 Pixel 9</text><text x="665" y="253" text-anchor="middle" class="small">push notification</text></g>
+
+<path class="flow" d="M 620 128 L 638 128" marker-end="url(#arrow)"/>
+<path class="flow" d="M 770 128 L 788 128" marker-end="url(#arrow)"/>
+<path class="flow" d="M 875 156 L 875 208" marker-end="url(#arrow)"/>
+<path class="flow" d="M 790 238 L 752 238" marker-end="url(#arrow)"/>
+
+<!-- blocked: orders hidden in email -->
+<path class="blocked" d="M 545 158 C 545 200, 520 215, 505 228"/>
+<text x="470" y="250" fill="#ff6b5a" font-size="22" font-weight="bold">✕</text>
+<text x="470" y="300" class="note">Orders hidden in an email are just text.</text>
+<text x="470" y="320" class="note">The stone reads them. It never obeys them.</text>
+
+<text x="700" y="372" text-anchor="middle" class="sub">Built with Claude Code · treated like a security problem, not just a tool</text>
+</svg>

@@ -95,11 +95,15 @@ flowchart LR
 
 ## 🔮 The Palantír (what I'm building with Claude)
 
-I'm learning to use Claude Code well, and I'm treating it like a security problem as much as a coding tool.
+<div align="center">
+  <img src="assets/palantir.svg" alt="An animated palantir showing visions of Ultron at work, next to a diagram: email and calendar pass through a read-only tool allowlist to Claude Code, which writes a daily brief and pings my Pixel. Orders hidden in emails are blocked." width="100%" />
+</div>
 
-- **Ultron morning brief.** Claude Code runs on a schedule, reads my email and calendar, and writes a daily brief to my notes, then pings my phone.
-- **Read-only by design.** An agent that reads email is a prompt-injection target: anyone who emails me can try to give it orders. So it only gets an allowlist of read-only tools, and it treats everything it reads as data, never as instructions.
-- **This profile.** Designed by me, built with Claude Code, merged through a pull request.
+I'm learning to use Claude Code well, and I treat it like a security problem as much as a coding tool.
+
+- **Ultron** runs on a schedule, reads my email and calendar, writes a daily brief to my notes, and pings my phone.
+- **Read-only by design.** An agent that reads email is a prompt-injection target, because anyone who emails me can try to give it orders. So it only gets read-only tools, and everything it reads is data, never instructions.
+- **This profile** was designed by me and built with Claude Code, down to the maps.
 
 > *Even the very wise cannot see all ends. That's why the agent doesn't get write access.*
 
