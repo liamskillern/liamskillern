@@ -128,17 +128,31 @@ Each stop is one of the five CompTIA Security+ (SY0-701) exam domains. Mount Doo
 
 ## 🧭 Seeking a Fellowship
 
-I'm looking for **internships and entry-level roles** in:
+### 🎓 Education
+
+| Degree | School | Status |
+|---|---|---|
+| B.S. Cybersecurity | Colorado State University Pueblo | Graduating Winter 2027 |
+| A.S. Cybersecurity | Arapahoe Community College | ✅ Completed |
+| CompTIA Security+ | | Studying, target summer 2027 |
+
+### ⚒️ Experience
+
+- **FOCO Cyber** (founder): security help for small businesses in Fort Collins.
+- **Homelab administrator:** I run my own Ubuntu server with Nextcloud, Immich, Paperless, AdGuard Home and Uptime Kuma, all over Tailscale.
+- **SIEM and detection:** deployed Wazuh with agents across my machines and use it to catch attacks in my AD lab.
+- **Active Directory attack lab:** built a Windows Server 2025 domain, attacked it from Kali, and scanned it with Nessus.
+- **AI automation:** built Ultron, a Claude Code morning brief with a read-only tool allowlist to defend against prompt injection.
+
+### 🔭 What I'm looking for
+
+**Internships and entry-level roles** in:
 
 - 🛡️ **Cybersecurity:** SOC analyst, security operations
 - 🖥️ **IT and help desk:** desktop support, systems administration
 - 🔮 **AI:** AI operations, automation, and securing AI agents
 
-- 🎓 B.S. Cybersecurity, **CSU Pueblo**, graduating Winter 2027
-- 🎓 A.S. Cybersecurity, **Arapahoe Community College**
-- 📍 Fort Collins, Colorado, open to remote
-
-If you're hiring, [message me on LinkedIn](https://www.linkedin.com/in/liam-skillern/).
+📍 Fort Collins, Colorado, open to remote. If you're hiring, [message me on LinkedIn](https://www.linkedin.com/in/liam-skillern/).
 
 ---
 
