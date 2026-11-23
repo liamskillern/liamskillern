@@ -211,96 +211,93 @@ Each idea combines mechanics from above in a way that, as far as these notes sho
 
 ---
 
-## 10 more ideas: survival, boss fights, snow and golf
+## 10 more ideas: a quiz or puzzle wrapped in a theme
 
-These ideas use the same seven mechanics, applied to the four themes you suggested. The same rule applies: **search for close matches before you build.** Daily golf games and community "world boss" events already exist, so the twist is what makes each one yours.
+Krillion's real trick: the *game* is a simple answer-the-prompt quiz, but the *theme* turns your score into something you can picture. Rarer answers don't just mean "more points," they mean you sank deeper into the ocean. Every idea below follows that recipe:
 
-### 11. Daily Descent: one mountain, everyone skis it ⛷️
-- **Pitch:** Each day the game generates one ski course, and the whole world races the same run. Steering is left/right only.
-- **Hook:** Shared daily puzzle (1), score on a scale (4), and "one more try" (6). You get 3 runs a day and the best one counts. You race the ghost of the median player, so you always have a rival who is about as good as you.
-- **Why it could spread:** Times are easy to compare ("41.2s, beat me"). Share line: `Descent #8 ⛷️ 41.2s · top 18% 🔥4`.
-- **Build:** 🟡 1–2 weeks with Phaser. The course comes from a date-based seed, so there's no content to write. Ghosts are just lists of saved positions.
-- **Money:** Portal version with unlimited random mountains. Keep the daily mountain on your own site.
+1. **Pick a simple core mechanic** you can build in a week: trivia, estimation, word-making, yes/no calls.
+2. **Map the score onto the theme** so good and bad answers have a visible result: a hole-in-one, a shanked shot, a critical hit, a wipeout.
+3. **Make near-misses visible** in the theme (the ball lips out, the boss survives at 1 HP). That's the "so close, one more try" feeling.
+4. **Turn the result into a themed share line**, like Krillion's depth.
 
-### 12. Outrun: snowboard ahead of the avalanche 🏂
-- **Pitch:** An endless downhill game with an avalanche chasing you. Tricks off jumps give speed. A trick you don't land costs speed, and the snow gets closer.
-- **Hook:** "One more try" (6) with constant near-misses, because the avalanche is always on screen. Juice (7) from powder spray, screen shake and the rumble getting louder. Risk and reward: a bigger trick means more speed but a higher chance of crashing.
-- **Why it could spread:** Escaping the avalanche by a pixel makes a great short clip for TikTok or YouTube Shorts.
-- **Build:** 🟢–🟡 1 week. One-button tricks: hold to spin, release to land.
-- **Money:** Built for Poki and CrazyGames (the portal revenue share). Unlockable boards and outfits make a natural rewarded-ad slot.
+The theme also makes reskinning cheap. Once the quiz engine works, a new theme is mostly new art and new copy.
 
-### 13. Crowd Green: today's hole was shaped by yesterday's players ⛳
-- **Pitch:** One golf hole a day. Overnight, the most popular landing spot from yesterday's players becomes a sand trap on today's course.
-- **Hook:** Shared puzzle (1) plus a crowd twist. Yesterday's players literally shape today's course, so the "safe" shot keeps changing. Score vs. par (4). Share line: `Crowd Green #21 ⛳ -1 (birdie) 🟩🟩🟨`.
-- **Why it could spread:** Every hole comes with a story ("everyone hit left yesterday, so left is a bunker now"), which gives people something to talk about.
-- **Build:** 🟡 1–2 weeks. Top-down 2D golf, plus a small server that counts landing spots and places tomorrow's hazards.
-- **Money:** Ads on your own site. A golf brand or local course is also a plausible sponsor.
+### 11. Fairway: estimation golf ⛳ ⭐ recommended
+- **Core mechanic:** 9 number-guess questions a day ("How many bones are in the human body?", "What year did the first iPhone come out?").
+- **The theme:** each question is a hole. The closer your guess, the closer the ball lands to the pin. Exact = **hole in one** 🎉. A little off = on the green, a putt or two. Way off = **shanked into the water**. Your final score is strokes vs. par.
+- **Why it works:** Scoring on a scale (no right/wrong, so everyone gets a result to compare). Golf scoring already *is* a "how close were you" system, so the theme explains itself. Share line: `Fairway #12 ⛳ -2 🦅🐦⛳⛳💦⛳🐦⛳⛳`.
+- **Build:** 🟢 about 1 week. The engine is just "how far off was the guess." The animation can be a simple 2D ball arc.
 
-### 14. One Putt: a daily bank-shot puzzle ⛳ ⭐ easiest of this batch
-- **Pitch:** One strange mini-golf green a day: walls, bumpers and portals. Find the single shot that sinks it. Unlimited attempts, and your score is how many you needed.
-- **Hook:** Wordle's structure (fewest tries wins) on a physics puzzle (1, 2, 3). Every miss shows you something, so "so close" feels fair (6).
-- **Why it could spread:** "Got it in 2" invites "no way, I needed 9." Share line: `One Putt #30 ⛳ 3 tries 🔥12`.
-- **Build:** 🟢 a weekend. A ball bouncing off straight walls is simple math, so you don't need a physics engine. Making greens is fun, and a few can be generated by code.
-- **Money:** Ads plus a one-time "course pack" of past greens, the same archive-unlock model reportedly used by Krillion.
+### 12. Downhill: rapid-fire ski trivia ⛷️
+- **Core mechanic:** a fast stream of two-choice questions (true/false, higher/lower, "which is bigger?"). You have 60 seconds.
+- **The theme:** each right answer carves you cleanly through the next gate, and streaks build speed. A wrong answer clips a gate and you lose time, and two in a row means you **wipe out** in the snow. Your score is your run time to the bottom.
+- **Why it works:** Speed matches skiing, so the pressure feels natural, and "one more try" is built in. Share line: `Downhill #7 ⛷️ 41.2s 🟩🟩🟩🟥🟩🟩 top 22%`.
+- **Build:** 🟢 about 1 week. Questions can come from data (populations, heights, release years), so the game can generate them automatically.
 
-### 15. World Boss: everyone fights the same boss today 🐉
-- **Pitch:** One boss a day with a big shared health bar. Each player gets 3 attempts, and the damage you deal comes off the global bar. If the world kills it by midnight, everyone who helped earns that day's trophy.
-- **Hook:** Connection (feeling part of something bigger, from the "deeper reason" research) plus the shared daily event (1). Rare moments (5): "top damage today" and "landed the killing blow."
-- **Why it could spread:** "The boss is at 4% HP with 2 hours left" makes people pull in their friends. It's a natural fit for Reddit Devvit or Discord Activities.
-- **Build:** 🟡–🔴 2–4 weeks. Simple action combat plus a server counter. 🔐 **Cybersecurity fit:** a shared HP bar is an obvious target for cheaters, so verify damage by replaying moves on the server (the same anti-cheat idea as Same Stack).
-- **Money:** Reddit developer funds and Discord. Cosmetic trophies.
+### 13. Big Air: rare answers, bigger tricks 🏂
+- **Core mechanic:** Krillion-style prompts ("Name a breakfast cereal") with 5 jumps a day. Rarer valid answers score more.
+- **The theme:** a common answer is a little ollie. A rare answer is a huge spinning trick: 360… 720… **1440**. An invalid answer means you **bail** and tumble down the slope. Your score is total degrees of spin.
+- **Why it works:** It takes Krillion's proven mechanic and changes the reward from depth to style, which feels very different. Share line: `Big Air #4 🏂 2,880° | 360 · 1080 · 💥 · 720 · 720`.
+- **Build:** 🟡 1–2 weeks. Rarity scoring needs a server that counts everyone's answers.
 
-### 16. Rare Build: beat the boss with a loadout nobody else picked 🃏
-- **Pitch:** Before each daily boss fight, you draft 3 abilities from 8. Winning counts, but your score is based on how rare your winning build was, Krillion-style.
-- **Hook:** Rarity scoring (4, 5) moved into a boss fight. Winning with the obvious build scores 20. Winning with a build only 0.3% of players tried earns "One in a Thousand."
-- **Why it could spread:** It's the Krillion format, which is trending right now, applied to a new genre. People share strange builds that somehow won.
-- **Build:** 🟡 2 weeks. Turn-based fights are much easier than action combat, and the server only needs to count which builds people picked.
-- **Money:** Ads. A good candidate for a paid "endless mode" later.
+### 14. Critical Hit: trivia boss fight ⚔️
+- **Core mechanic:** a daily trivia set of 8 questions on a timer.
+- **The theme:** each right answer hits the day's boss. A fast answer is a **critical hit** with big damage numbers and screen shake. A wrong answer means the boss hits *you*, and you have 3 hearts. The near-miss is built in: "the boss survived with 3% HP."
+- **Why it works:** Juice (damage numbers, flashes) makes a plain quiz feel like a game. Optional twist: everyone's damage also comes off one global boss health bar for the day. Share line: `Critical Hit #9 ⚔️ 💥💥⚔️💔⚔️💥 boss defeated · 2 ❤️ left`.
+- **Build:** 🟢–🟡 1–2 weeks (the global health bar adds a server).
 
-### 17. Last Light: survive seven nights in five minutes 🔥
-- **Pitch:** A survival game played with cards. Each night you choose: gather wood, find food, fortify, or explore. Each choice risks something. Get through 7 nights. Everyone plays the same daily seed.
-- **Hook:** Daily shared run (1), short and replayable, plus a clean share line: `Last Light #9 🌑🌑🌑🌑🌑🔥🔥 survived 7/7`. The near-miss of dying on night 6 gives you "one more try."
-- **Why it could spread:** Comparing "how did you survive night 4?" leads to strategy talk, which is free word of mouth.
-- **Build:** 🟢 about 1 week. Mostly text and choices with simple art. No physics, no real-time action. Great for staying focused.
-- **Money:** Ads, plus an "endless" random-seed mode as a one-time unlock.
+### 15. Spellbreaker: word-making boss fight 🔮
+- **Core mechanic:** you get 7 letters (like a Spelling Bee) and make words.
+- **The theme:** every word is a spell. Longer words hit harder. Each day's boss has a weakness, such as "weak to words with Z" or "weak to food words," which deal double damage. You beat the boss in as few words as you can.
+- **Why it works:** The daily weakness changes the strategy every day, so the game doesn't feel like the same word puzzle twice. Share line: `Spellbreaker #3 🔮 boss down in 6 spells · biggest hit: ZEPHYR 🔥`.
+- **Build:** 🟡 1–2 weeks. You need a word list and a simple damage formula.
 
-### 18. The Colony: survive together, one vote a day 🏕️
-- **Pitch:** One shared group of survivors for all players. Each day everyone votes on the colony's next move: ration food, scout the ruins, take in strangers. Tomorrow the results play out, and the story continues for weeks.
-- **Hook:** Connection (feeling part of something) plus a daily appointment, without punishing people who miss a day. "Day 47 of the colony" gives people a reason to come back that doesn't depend on streak pressure.
-- **Why it could spread:** Built for Reddit Devvit. Each day's result can be its own post, and the comment arguments are the marketing.
-- **Build:** 🟡 2–3 weeks, plus a few minutes of writing each day. AI can help draft event text, but you edit it.
-- **Money:** Reddit developer funds (they pay by daily player count). A "Season 1" archive.
+### 16. Stranded: Family Feud survival 🏝️
+- **Core mechanic:** the *opposite* of Krillion. Each prompt asks you to guess the **most popular** answer, like the classic "survey says" game shows.
+- **The theme:** you're stranded on an island. Each answer that matches the crowd adds supplies (wood, water, food), and each supply is a day survived. Answers nobody else said wash away in the tide. Your score is days survived.
+- **Why it works:** Thinking like the crowd is a different, social skill from Krillion's rare-answer hunting, so this is not a copy of it. Every day, players learn what "everyone" thinks. Share line: `Stranded #15 🏝️ survived 23 days 🪵💧💧🍖🌊🪵🍖`.
+- **Build:** 🟡 ~2 weeks. Seed day one with your own guesses; after that, real players' answers set the rankings.
+
+### 17. Summit: push-your-luck mountain climb 🏔️
+- **Core mechanic:** trivia where *you* choose the difficulty each step. Easy questions climb 100 m. Hard ones climb 500 m. You only have so much oxygen, and each wrong answer costs a chunk of it.
+- **The theme:** a climb up a deadly mountain. At any point you can **bank your height** and climb down safely, or push for the summit. Run out of oxygen and you're "lost at 7,400 m," and your score drops.
+- **Why it works:** Push-your-luck (keep going or cash out?) is one of the strongest "one more try" mechanics. The decision is tense and the story writes itself. Share line: `Summit #6 🏔️ 8,849 m — SUMMITED 🚩` or `Summit #6 lost at 7,400 m 🥶`.
+- **Build:** 🟢 about 1 week. It's just a quiz with a difficulty choice and an oxygen meter.
+
+### 18. Last Light: survive the night on knowledge 🔥
+- **Core mechanic:** a short daily quiz of 7 questions, one per hour of the night.
+- **The theme:** you keep a campfire alive until dawn. Right answers add logs, so the fire grows and the wolves stay back. Wrong answers make the fire shrink, and eyes appear at the edge of the dark. Lose the fire and the night ends early.
+- **Why it works:** It's atmospheric and tense even though it's only 7 questions, and the visual of the fire shrinking is a natural near-miss. Share line: `Last Light #2 🔥 survived until dawn 🔥🔥🔥🪵🔥🔥🌅`.
+- **Build:** 🟢 about 1 week. Mostly mood: dark screen, a fire animation and sound.
 
 ### 19. Uptime: keep the server alive 🖥️ 🔐 cybersecurity fit
-- **Pitch:** A survival game where you're the night-shift sysadmin. Alerts pour in, such as failed logins, a CPU spike or an odd outbound connection, and you triage each one: block, patch, ignore or escalate. Survive until 6 a.m. without a breach.
-- **Hook:** Survival pressure (one more shift), escalating difficulty, a score for minutes of uptime, plus a daily seed so everyone gets the same night. Share line: `Uptime #5 🟢🟢🟢🟡🔴 breached at 4:12 a.m.`
-- **Why it could spread:** Security and IT communities (r/sysadmin, r/cybersecurity) love games about their jobs, and it's a great portfolio piece that shows you know what real alerts look like.
-- **Build:** 🟡 2 weeks. A user interface with timers, no game engine needed. The real work is writing realistic alerts, which is also good study.
-- **Money:** Sponsorship from security training companies is plausible. Mainly a portfolio and résumé piece.
+- **Core mechanic:** rapid yes/no calls on real-looking items: "Phishing email or legit?", "Is this password strong?", "Malicious URL or safe?"
+- **The theme:** you're the night-shift sysadmin. Right calls keep the server green. Wrong calls let threats through, and the status lights go yellow, then red. Survive until 6 a.m. without a breach.
+- **Why it works:** Your field becomes the content, and security people love games about their job. It doubles as a portfolio piece and a study tool. Share line: `Uptime #5 🖥️ 🟢🟢🟢🟡🔴 breached at 4:12 a.m.`
+- **Build:** 🟢–🟡 1–2 weeks. Writing realistic emails and URLs is the main work, and it's also good practice for your classes.
 
-### 20. Patch the Boss: win by finding its bug 🐛 🔐 cybersecurity fit
-- **Pitch:** A boss fight you can't win by attacking. Each boss has a flaw, like taking a negative number for damage, never checking whether you're really an "admin," or a timing gap during its windup. Find the flaw and exploit it.
-- **Hook:** A puzzle in boss form. The "aha" moment is a rare moment you want to brag about (5). A daily boss with a shared flaw gives a share line like `Patch the Boss #3 🐛 found in 4 tries`.
-- **Why it could spread:** Players learn real ideas, such as input validation, broken access control and race conditions, without it feeling like class. Capture-the-flag (CTF) players and teachers would share it.
-- **Build:** 🟡 2–3 weeks. Each boss is a small puzzle with a deliberate bug. Make sure the only bugs are the ones you meant to include.
-- **Money:** Portfolio and teaching use first. School licenses or sponsorship later.
+### 20. Patch the Boss: security quiz boss fight 🐛 🔐 cybersecurity fit
+- **Core mechanic:** spot the flaw. Each question shows a short code snippet, login screen or network setting, and you pick what's wrong.
+- **The theme:** the boss is a piece of malware. Every flaw you spot is a patch that hits it. Miss one and it spreads, and the boss heals. Beat the boss before it takes over the network.
+- **Why it works:** It teaches real security ideas, like input validation and weak access checks, in a format that feels like a game. Capture-the-flag (CTF) players, classes and bootcamps would share it. Share line: `Patch the Boss #3 🐛 malware deleted · 6/7 patches 🛡️`.
+- **Build:** 🟡 ~2 weeks. Each question has to be accurate, so check them carefully.
 
 ### The second batch at a glance
 
-| Idea | Theme | Difficulty | Time | Best money path |
+| Idea | Core mechanic | Theme | How score shows | Difficulty |
 |---|---|---|---|---|
-| 11. Daily Descent | Skiing | 🟡 | 1–2 wks | Own site + portal spin-off |
-| 12. Outrun | Snowboarding + survival | 🟢–🟡 | ~1 wk | Portals |
-| 13. Crowd Green | Golf | 🟡 | 1–2 wks | Ads, sponsor |
-| 14. One Putt ⭐ | Golf | 🟢 | Weekend | Ads, unlock |
-| 15. World Boss 🔐 | Boss fight | 🟡–🔴 | 2–4 wks | Reddit, Discord |
-| 16. Rare Build | Boss fight | 🟡 | ~2 wks | Ads, unlock |
-| 17. Last Light | Survival | 🟢 | ~1 wk | Ads, unlock |
-| 18. The Colony | Survival | 🟡 | 2–3 wks | Reddit funds |
-| 19. Uptime 🔐 | Survival + security | 🟡 | ~2 wks | Portfolio, sponsor |
-| 20. Patch the Boss 🔐 | Boss + security | 🟡 | 2–3 wks | Portfolio, teaching |
+| 11. Fairway ⭐ | Number estimation | Golf | Hole in one → shank into the water | 🟢 |
+| 12. Downhill | Rapid-fire 2-choice | Skiing | Clean gates → wipeout, run time | 🟢 |
+| 13. Big Air | Rare answers (Krillion-style) | Snowboarding | Ollie → 1440 spin, bail | 🟡 |
+| 14. Critical Hit | Timed trivia | Boss fight | Crits and damage, boss HP left | 🟢–🟡 |
+| 15. Spellbreaker | Word-making | Boss fight | Spell damage, daily weakness | 🟡 |
+| 16. Stranded | Popular answers (survey-style) | Survival | Days survived | 🟡 |
+| 17. Summit | Push-your-luck trivia | Survival / climbing | Meters climbed, summit or lost | 🟢 |
+| 18. Last Light | Short daily quiz | Survival | Fire alive until dawn | 🟢 |
+| 19. Uptime 🔐 | Rapid yes/no security calls | Survival + security | Server status lights | 🟢–🟡 |
+| 20. Patch the Boss 🔐 | Spot the flaw | Boss + security | Malware HP | 🟡 |
 
-**If you only build one from this batch:** start with **One Putt** (a weekend) or **Last Light** (about a week). Both are small enough to finish and have a share line that's easy to copy. **Outrun** is the best bet for portal money, and **Uptime** or **Patch the Boss** is the best for your résumé.
+**Best first pick: Fairway.** It's exactly the Krillion recipe: a simple quiz anyone can play, a theme that makes the score obvious, and a share line that is fun to post. Build one quiz engine, and Downhill, Critical Hit and Last Light are mostly reskins of it, so one week of code could become four games.
 
 ---
 
