@@ -121,7 +121,11 @@ Target: **summer 2027**, CompTIA Security+ (SY0-701). I check off each domain as
 
 ## 🧭 Seeking a Fellowship
 
-I'm looking for **cybersecurity internships and entry-level roles** (SOC analyst, security operations, IT with a security focus).
+I'm looking for **internships and entry-level roles** in:
+
+- 🛡️ **Cybersecurity:** SOC analyst, security operations
+- 🖥️ **IT and help desk:** desktop support, systems administration
+- 🔮 **AI:** AI operations, automation, and securing AI agents
 
 - 🎓 B.S. Cybersecurity, **CSU Pueblo**, graduating Winter 2027
 - 🎓 A.S. Cybersecurity, **Arapahoe Community College**
