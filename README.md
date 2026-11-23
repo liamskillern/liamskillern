@@ -43,14 +43,16 @@ Most of what I learn, I learn by building it in my homelab first.
 
 ---
 
-## 🗺️ Quests in Progress
+## 🗺️ Quests
 
-| Quest | What it is | Status |
-|---|---|---|
-| 🏰 **Active Directory lab** | Build it, attack it, detect it. A Windows Server 2025 domain controller, a Kali attacker, Wazuh for detection and Nessus for scanning. | 🟡 Write-up coming |
-| 🌋 **[Homelab](https://github.com/liamskillern/homelab)** | An Ubuntu server I run myself, with a Wazuh SIEM watching every machine I own. Map below, full write-up [here](https://github.com/liamskillern/homelab). | 🟢 Running |
-| 🔮 **Ultron, my AI morning brief** | Claude Code reads my email and calendar and writes me a daily brief. See *The Palantír* below. | 🟡 Moving to the cloud |
-| 🛡️ **FOCO Cyber** | Security help for small businesses in Fort Collins. | 🟡 Starting up |
+<div align="center">
+  <img src="assets/quests.svg" alt="Quests. Active Directory lab: build it, attack it, detect it (write-up coming). Homelab: an Ubuntu server with a Wazuh SIEM watching every machine (running). Ultron, my AI morning brief built on Claude Code (moving to the cloud). FOCO Cyber: security help for small businesses in Fort Collins (starting up)." width="100%" />
+
+<br/>
+
+[![Homelab write-up](https://img.shields.io/badge/Read_the_homelab_write--up-1B1B1B?style=for-the-badge&logo=github&logoColor=D4AF37)](https://github.com/liamskillern/homelab)
+
+</div>
 
 ---
 
