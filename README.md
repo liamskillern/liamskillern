@@ -50,7 +50,7 @@ Most of what I learn, I learn by building it in my homelab first.
 | Quest | What it is | Status |
 |---|---|---|
 | 🏰 **Active Directory lab** | Build it, attack it, detect it. A Windows Server 2025 domain controller, a Kali attacker, Wazuh for detection and Nessus for scanning. | 🟡 Write-up coming |
-| 🌋 **Homelab** | An Ubuntu server I run myself, with a Wazuh SIEM watching every machine I own. Map below. | 🟢 Running |
+| 🌋 **[Homelab](https://github.com/liamskillern/homelab)** | An Ubuntu server I run myself, with a Wazuh SIEM watching every machine I own. Map below, full write-up [here](https://github.com/liamskillern/homelab). | 🟢 Running |
 | 🔮 **Ultron, my AI morning brief** | Claude Code reads my email and calendar and writes me a daily brief. See *The Palantír* below. | 🟡 Moving to the cloud |
 | 🛡️ **FOCO Cyber** | Security help for small businesses in Fort Collins. | 🟡 Starting up |
 
@@ -58,7 +58,7 @@ Most of what I learn, I learn by building it in my homelab first.
 
 ## 🌍 Map of my Middle-earth (the homelab)
 
-Everything is reached over Tailscale, so nothing is exposed to the open internet.
+Everything is reached over Tailscale, so nothing is exposed to the open internet. The full tour lives in my [homelab repo](https://github.com/liamskillern/homelab).
 
 ```mermaid
 flowchart LR
